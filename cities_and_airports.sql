@@ -1,3 +1,11 @@
+CREATE TABLE airports (
+  id SERIAL PRIMARY KEY,
+  city_id INT REFERENCES cities,
+  FAA_id VARCHAR(3),
+  IATA_id VARCHAR(3),
+  ICAO_id VARCHAR(4),
+  name VARCHAR(500)
+);
 CREATE TABLE cities (
   id SERIAL PRIMARY KEY,
   city VARCHAR(255),
@@ -15,14 +23,14 @@ INSERT INTO cities VALUES(DEFAULT, 'Houston', 'Texas', 2325502,	2100263, 637.5, 
 INSERT INTO cities VALUES(DEFAULT, 'Phoenix', 'Arizona', 1660272,	1445632, 517.6, 3120);
 INSERT INTO cities VALUES(DEFAULT, 'Philadelphia', 'Pennsylvania', 1584138,	1526006, 134.2, 11683);
 INSERT INTO cities VALUES(DEFAULT, 'San Antonio', 'Texas', 1532233,	1327407, 461.0, 3238);
-INSERT INTO cities VALUES(DEFAULT, 'San Diego', 'California',	1425976, 1307402, 325.2, 4325);	
+INSERT INTO cities VALUES(DEFAULT, 'San Diego', 'California',	1425976, 1307402, 325.2, 4325);
 INSERT INTO cities VALUES(DEFAULT, 'Dallas', 'Texas',	1345047, 1197816, 340.9, 3866);
-INSERT INTO cities VALUES(DEFAULT, 'San Jose', 'California', 1030119,	945942, 177.5, 5777);	
+INSERT INTO cities VALUES(DEFAULT, 'San Jose', 'California', 1030119,	945942, 177.5, 5777);
 INSERT INTO cities VALUES(DEFAULT, 'Austin', 'Texas',	964254, 790390, 312.7, 3031);
 INSERT INTO cities VALUES(DEFAULT, 'Jacksonville', 'Florida',	903889,	821784,	747.4, 1178);
 INSERT INTO cities VALUES(DEFAULT, 'Fort Worth', 'Texas',	895008,	741206, 342.9, 2491);
 INSERT INTO cities VALUES(DEFAULT, 'Columbus', 'Ohio', 892533, 787033, 218.5, 3936);
-INSERT INTO cities VALUES(DEFAULT, 'San Francisco', 'California',	883305,	805235,	46.9, 18569);	
+INSERT INTO cities VALUES(DEFAULT, 'San Francisco', 'California',	883305,	805235,	46.9, 18569);
 INSERT INTO cities VALUES(DEFAULT, 'Charlotte', 'North Carolina',	872498,	731424,	305.4, 2757);
 INSERT INTO cities VALUES(DEFAULT, 'Indianapolis', 'Indiana',	867125,	820445,	361.5, 2366);
 INSERT INTO cities VALUES(DEFAULT, 'Seattle', 'Washington',	744955,	608660, 83.8, 8405);
@@ -34,14 +42,6 @@ INSERT INTO cities VALUES(DEFAULT, 'Detroit', 'Michigan',	672662,	713777,	138.8,
 INSERT INTO cities VALUES(DEFAULT, 'Nashville', 'Tennessee', 669053, 601222, 475.9, 1388);
 INSERT INTO cities VALUES(DEFAULT, 'Portland', 'Oregon', 653115, 583776, 133.5, 4793);
 
-CREATE TABLE airports (
-  id SERIAL PRIMARY KEY,
-  city_id INT REFERENCES cities,
-  FAA_id VARCHAR(3),
-  IATA_id VARCHAR(3),
-  ICAO_id VARCHAR(4),
-  name VARCHAR(500)
-);
 
 INSERT INTO airports VALUES(DEFAULT, 1, 'JFK',	'JFK', 'KJFK', 'John F. Kennedy International Airport');
 INSERT INTO airports VALUES(DEFAULT, 1, 'LGA',	'LGA',	'KLGA',	'LaGuardia Airport');

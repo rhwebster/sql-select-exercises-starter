@@ -91,7 +91,7 @@
      uses a WHERE clause to return only the cities in Texas.
 */
 
--- your query here
+SELECT city, population_estimate_2018/1000000 as population_estimate_2018 from cities where state = 'Texas';
 
 \echo ========= Problem 3.6 ====================================================
 \echo
@@ -104,7 +104,7 @@
      New York, California, Texas.
 */
 
--- your query here
+select city, population_estimate_2018/1000000 as popInMillions from cities where state not in ('New York', 'California', 'Texas');
 
 \echo ========= Problem 3.7 ====================================================
 \echo

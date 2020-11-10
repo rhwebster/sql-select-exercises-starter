@@ -1,5 +1,5 @@
 # Solving The SQL Menagerie
-dfsghisghjk
+
 In our SQL readings, we learned how to write basic SQL queries and incorporate
 `WHERE` clauses to filter for more specific results. We also learned how to use
 a `JOIN` operation to get information from multiple tables.
