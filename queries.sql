@@ -149,7 +149,7 @@ select city, land_area_sq_mi_2016, population_estimate_2018 from cities where (l
 
 select city, population_estimate_2018, population_census_2010 from cities where population_census_2010+200000 < population_estimate_2018;
 select city, population_estimate_2018, population_census_2010 from cities where population_estimate_2018-population_census_2010 > 200000;
-
+select name from airports inner join cities (airportscity_id = cities.id);
 
 ---- Phase 4: Use a JOIN operation ---------------------------------------------
 -- Retrieve rows from multiple tables joining on a foreign key.
