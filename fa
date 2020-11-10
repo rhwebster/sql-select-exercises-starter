@@ -1,0 +1,29 @@
+     city      |        state         | population_estimate_2018 | to_char 
+---------------+----------------------+--------------------------+---------
+ New York      | New York             |                  8398748 | text
+ Los Angeles   | California           |                  3990456 | text
+ Chicago       | Illinois             |                  2705994 | text
+ Houston       | Texas                |                  2325502 | text
+ Phoenix       | Arizona              |                  1660272 | text
+ Philadelphia  | Pennsylvania         |                  1584138 | text
+ San Antonio   | Texas                |                  1532233 | text
+ San Diego     | California           |                  1425976 | text
+ Dallas        | Texas                |                  1345047 | text
+ San Jose      | California           |                  1030119 | text
+ Austin        | Texas                |                   964254 | text
+ Jacksonville  | Florida              |                   903889 | text
+ Fort Worth    | Texas                |                   895008 | text
+ Columbus      | Ohio                 |                   892533 | text
+ San Francisco | California           |                   883305 | text
+ Charlotte     | North Carolina       |                   872498 | text
+ Indianapolis  | Indiana              |                   867125 | text
+ Seattle       | Washington           |                   744955 | text
+ Denver        | Colorado             |                   716492 | text
+ Washington    | District of Columbia |                   702455 | text
+ Boston        | Massachusetts        |                   694583 | text
+ El Paso       | Texas                |                   682669 | text
+ Detroit       | Michigan             |                   672662 | text
+ Nashville     | Tennessee            |                   669053 | text
+ Portland      | Oregon               |                   653115 | text
+(25 rows)
+
