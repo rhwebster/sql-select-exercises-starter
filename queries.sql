@@ -126,8 +126,7 @@ select city, state, population_estimate_2018 from cities where city LIKE 'S%';
      population in 2018.
 */
 
--- your query here
-
+select city, land_area_sq_mi_2016, population_estimate_2018 from cities where land_area_sq_mi_2016 > 400 or population_estimate_2018 > 2000000;
 \echo ========= Problem 3.9 ====================================================
 \echo
 /*
