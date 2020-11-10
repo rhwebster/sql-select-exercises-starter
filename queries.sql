@@ -164,7 +164,7 @@ select name from airports inner join cities (airportscity_id = cities.id);
      airport names and city names only.
 */
 
--- your query here
+select name, cities.city from airports INNER JOIN cities ON (airports.city_id = cities.id);
 
 \echo ========= Problem 4.2 ====================================================
 \echo
@@ -176,7 +176,7 @@ select name from airports inner join cities (airportscity_id = cities.id);
       rows.)
 */
 
--- your query here
+select count(*) from airports inner join cities on (airports.city_id = cities.id) where cities.city = 'New York';
 
 --------------------------------------------------------------------------------
 ---- Bonuses:
