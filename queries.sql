@@ -115,7 +115,7 @@ select city, population_estimate_2018/1000000 as popInMillions from cities where
      (Note: See the PostgreSQL doc on Pattern Matching for more information.)
 */
 
--- your query here
+select city, state, population_estimate_2018 from cities where city LIKE 'S%';
 
 \echo ========= Problem 3.8 ====================================================
 \echo
