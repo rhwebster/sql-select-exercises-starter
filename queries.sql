@@ -176,7 +176,7 @@ select name, cities.city from airports INNER JOIN cities ON (airports.city_id = 
       rows.)
 */
 
-select count(*) from airports inner join cities on (airports.city_id = cities.id) where cities.city = 'New York';
+SELECT COUNT(*) from airports INNER JOIN cities ON (airports.city_id = cities.id) WHERE city = 'New York';
 
 --------------------------------------------------------------------------------
 ---- Bonuses:
