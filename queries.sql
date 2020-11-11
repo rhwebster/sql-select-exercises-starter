@@ -223,7 +223,7 @@ B.3) Decimals and Rounding: Refactor Phase 3, Query #5 to turn number of
        in Texas.
 */
 
--- your query here
+select city, round(population_estimate_2018/1000000::decimal, 2) from cities where state = 'Texas';
 
 \echo ========= Problem B.4 ====================================================
 \echo
@@ -242,6 +242,6 @@ B.4) ORDER BY and LIMIT Clauses: Refactor Phase 3, Query #10 to return only one
        the census population in 2010.
 */
 
--- your query here
+select city from cities order by (population_estimate_2018-population_census_2010) DESC limit 3;
 
 \echo ========= (done!) ========================================================
